@@ -1,0 +1,1 @@
+-wto "21f7546921364cfa9fddd401da848a2d" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "SIPO_func_synth" "xil_defaultlib.SIPO" -log "elaborate.log" 

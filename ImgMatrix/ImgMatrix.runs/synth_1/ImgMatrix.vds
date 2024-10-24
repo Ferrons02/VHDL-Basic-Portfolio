@@ -1,0 +1,413 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 26 19:04:23 2023
+# Process ID: 9152
+# Current directory: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+# Command line: vivado.exe -log ImgMatrix.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ImgMatrix.tcl
+# Log file: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/ImgMatrix.vds
+# Journal file: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ImgMatrix.tcl -notrace
+Command: synth_design -top ImgMatrix -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13120 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 338.820 ; gain = 83.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ImgMatrix' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:26]
+	Parameter IMG_DIM_POW2 bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:15]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ff_d' (1#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:14]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'PIPO_reg' (2#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:15]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:57]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'grigio_out' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'ImgMatrix' (3#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:26]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 394.637 ; gain = 138.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 394.637 ; gain = 138.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 394.637 ; gain = 138.820
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 394.637 ; gain = 138.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 136   
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ImgMatrix 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 16    
+Module ff_d 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     2|
+|3     |LUT2   |     1|
+|4     |LUT3   |     9|
+|5     |LUT4   |     1|
+|6     |LUT5   |     1|
+|7     |LUT6   |   153|
+|8     |MUXF7  |    14|
+|9     |MUXF8  |     7|
+|10    |FDCE   |   119|
+|11    |IBUF   |    34|
+|12    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+------------+------+
+|      |Instance                     |Module      |Cells |
++------+-----------------------------+------------+------+
+|1     |top                          |            |   350|
+|2     |  \Righe[0].Colonne[0].regx  |PIPO_reg    |    25|
+|3     |    \ISTANZE[0].ff_dn        |ff_d_127    |     5|
+|4     |    \ISTANZE[1].ff_dn        |ff_d_128    |     5|
+|5     |    \ISTANZE[2].ff_dn        |ff_d_129    |     3|
+|6     |    \ISTANZE[3].ff_dn        |ff_d_130    |     3|
+|7     |    \ISTANZE[4].ff_dn        |ff_d_131    |     3|
+|8     |    \ISTANZE[5].ff_dn        |ff_d_132    |     3|
+|9     |    \ISTANZE[6].ff_dn        |ff_d_133    |     3|
+|10    |  \Righe[0].Colonne[1].regx  |PIPO_reg_0  |    14|
+|11    |    \ISTANZE[0].ff_dn        |ff_d_120    |     2|
+|12    |    \ISTANZE[1].ff_dn        |ff_d_121    |     2|
+|13    |    \ISTANZE[2].ff_dn        |ff_d_122    |     2|
+|14    |    \ISTANZE[3].ff_dn        |ff_d_123    |     2|
+|15    |    \ISTANZE[4].ff_dn        |ff_d_124    |     2|
+|16    |    \ISTANZE[5].ff_dn        |ff_d_125    |     2|
+|17    |    \ISTANZE[6].ff_dn        |ff_d_126    |     2|
+|18    |  \Righe[0].Colonne[2].regx  |PIPO_reg_1  |    14|
+|19    |    \ISTANZE[0].ff_dn        |ff_d_113    |     2|
+|20    |    \ISTANZE[1].ff_dn        |ff_d_114    |     2|
+|21    |    \ISTANZE[2].ff_dn        |ff_d_115    |     2|
+|22    |    \ISTANZE[3].ff_dn        |ff_d_116    |     2|
+|23    |    \ISTANZE[4].ff_dn        |ff_d_117    |     2|
+|24    |    \ISTANZE[5].ff_dn        |ff_d_118    |     2|
+|25    |    \ISTANZE[6].ff_dn        |ff_d_119    |     2|
+|26    |  \Righe[0].Colonne[3].regx  |PIPO_reg_2  |    14|
+|27    |    \ISTANZE[0].ff_dn        |ff_d_106    |     2|
+|28    |    \ISTANZE[1].ff_dn        |ff_d_107    |     2|
+|29    |    \ISTANZE[2].ff_dn        |ff_d_108    |     2|
+|30    |    \ISTANZE[3].ff_dn        |ff_d_109    |     2|
+|31    |    \ISTANZE[4].ff_dn        |ff_d_110    |     2|
+|32    |    \ISTANZE[5].ff_dn        |ff_d_111    |     2|
+|33    |    \ISTANZE[6].ff_dn        |ff_d_112    |     2|
+|34    |  \Righe[1].Colonne[0].regx  |PIPO_reg_3  |    14|
+|35    |    \ISTANZE[0].ff_dn        |ff_d_99     |     2|
+|36    |    \ISTANZE[1].ff_dn        |ff_d_100    |     2|
+|37    |    \ISTANZE[2].ff_dn        |ff_d_101    |     2|
+|38    |    \ISTANZE[3].ff_dn        |ff_d_102    |     2|
+|39    |    \ISTANZE[4].ff_dn        |ff_d_103    |     2|
+|40    |    \ISTANZE[5].ff_dn        |ff_d_104    |     2|
+|41    |    \ISTANZE[6].ff_dn        |ff_d_105    |     2|
+|42    |  \Righe[1].Colonne[1].regx  |PIPO_reg_4  |    14|
+|43    |    \ISTANZE[0].ff_dn        |ff_d_92     |     2|
+|44    |    \ISTANZE[1].ff_dn        |ff_d_93     |     2|
+|45    |    \ISTANZE[2].ff_dn        |ff_d_94     |     2|
+|46    |    \ISTANZE[3].ff_dn        |ff_d_95     |     2|
+|47    |    \ISTANZE[4].ff_dn        |ff_d_96     |     2|
+|48    |    \ISTANZE[5].ff_dn        |ff_d_97     |     2|
+|49    |    \ISTANZE[6].ff_dn        |ff_d_98     |     2|
+|50    |  \Righe[1].Colonne[2].regx  |PIPO_reg_5  |    14|
+|51    |    \ISTANZE[0].ff_dn        |ff_d_85     |     2|
+|52    |    \ISTANZE[1].ff_dn        |ff_d_86     |     2|
+|53    |    \ISTANZE[2].ff_dn        |ff_d_87     |     2|
+|54    |    \ISTANZE[3].ff_dn        |ff_d_88     |     2|
+|55    |    \ISTANZE[4].ff_dn        |ff_d_89     |     2|
+|56    |    \ISTANZE[5].ff_dn        |ff_d_90     |     2|
+|57    |    \ISTANZE[6].ff_dn        |ff_d_91     |     2|
+|58    |  \Righe[1].Colonne[3].regx  |PIPO_reg_6  |    14|
+|59    |    \ISTANZE[0].ff_dn        |ff_d_78     |     2|
+|60    |    \ISTANZE[1].ff_dn        |ff_d_79     |     2|
+|61    |    \ISTANZE[2].ff_dn        |ff_d_80     |     2|
+|62    |    \ISTANZE[3].ff_dn        |ff_d_81     |     2|
+|63    |    \ISTANZE[4].ff_dn        |ff_d_82     |     2|
+|64    |    \ISTANZE[5].ff_dn        |ff_d_83     |     2|
+|65    |    \ISTANZE[6].ff_dn        |ff_d_84     |     2|
+|66    |  \Righe[2].Colonne[0].regx  |PIPO_reg_7  |    14|
+|67    |    \ISTANZE[0].ff_dn        |ff_d_71     |     2|
+|68    |    \ISTANZE[1].ff_dn        |ff_d_72     |     2|
+|69    |    \ISTANZE[2].ff_dn        |ff_d_73     |     2|
+|70    |    \ISTANZE[3].ff_dn        |ff_d_74     |     2|
+|71    |    \ISTANZE[4].ff_dn        |ff_d_75     |     2|
+|72    |    \ISTANZE[5].ff_dn        |ff_d_76     |     2|
+|73    |    \ISTANZE[6].ff_dn        |ff_d_77     |     2|
+|74    |  \Righe[2].Colonne[1].regx  |PIPO_reg_8  |    14|
+|75    |    \ISTANZE[0].ff_dn        |ff_d_64     |     2|
+|76    |    \ISTANZE[1].ff_dn        |ff_d_65     |     2|
+|77    |    \ISTANZE[2].ff_dn        |ff_d_66     |     2|
+|78    |    \ISTANZE[3].ff_dn        |ff_d_67     |     2|
+|79    |    \ISTANZE[4].ff_dn        |ff_d_68     |     2|
+|80    |    \ISTANZE[5].ff_dn        |ff_d_69     |     2|
+|81    |    \ISTANZE[6].ff_dn        |ff_d_70     |     2|
+|82    |  \Righe[2].Colonne[2].regx  |PIPO_reg_9  |    14|
+|83    |    \ISTANZE[0].ff_dn        |ff_d_57     |     2|
+|84    |    \ISTANZE[1].ff_dn        |ff_d_58     |     2|
+|85    |    \ISTANZE[2].ff_dn        |ff_d_59     |     2|
+|86    |    \ISTANZE[3].ff_dn        |ff_d_60     |     2|
+|87    |    \ISTANZE[4].ff_dn        |ff_d_61     |     2|
+|88    |    \ISTANZE[5].ff_dn        |ff_d_62     |     2|
+|89    |    \ISTANZE[6].ff_dn        |ff_d_63     |     2|
+|90    |  \Righe[2].Colonne[3].regx  |PIPO_reg_10 |    14|
+|91    |    \ISTANZE[0].ff_dn        |ff_d_50     |     2|
+|92    |    \ISTANZE[1].ff_dn        |ff_d_51     |     2|
+|93    |    \ISTANZE[2].ff_dn        |ff_d_52     |     2|
+|94    |    \ISTANZE[3].ff_dn        |ff_d_53     |     2|
+|95    |    \ISTANZE[4].ff_dn        |ff_d_54     |     2|
+|96    |    \ISTANZE[5].ff_dn        |ff_d_55     |     2|
+|97    |    \ISTANZE[6].ff_dn        |ff_d_56     |     2|
+|98    |  \Righe[3].Colonne[0].regx  |PIPO_reg_11 |    35|
+|99    |    \ISTANZE[0].ff_dn        |ff_d_43     |     5|
+|100   |    \ISTANZE[1].ff_dn        |ff_d_44     |     5|
+|101   |    \ISTANZE[2].ff_dn        |ff_d_45     |     5|
+|102   |    \ISTANZE[3].ff_dn        |ff_d_46     |     5|
+|103   |    \ISTANZE[4].ff_dn        |ff_d_47     |     5|
+|104   |    \ISTANZE[5].ff_dn        |ff_d_48     |     5|
+|105   |    \ISTANZE[6].ff_dn        |ff_d_49     |     5|
+|106   |  \Righe[3].Colonne[1].regx  |PIPO_reg_12 |    28|
+|107   |    \ISTANZE[0].ff_dn        |ff_d_36     |     4|
+|108   |    \ISTANZE[1].ff_dn        |ff_d_37     |     4|
+|109   |    \ISTANZE[2].ff_dn        |ff_d_38     |     4|
+|110   |    \ISTANZE[3].ff_dn        |ff_d_39     |     4|
+|111   |    \ISTANZE[4].ff_dn        |ff_d_40     |     4|
+|112   |    \ISTANZE[5].ff_dn        |ff_d_41     |     4|
+|113   |    \ISTANZE[6].ff_dn        |ff_d_42     |     4|
+|114   |  \Righe[3].Colonne[2].regx  |PIPO_reg_13 |    21|
+|115   |    \ISTANZE[0].ff_dn        |ff_d_29     |     3|
+|116   |    \ISTANZE[1].ff_dn        |ff_d_30     |     3|
+|117   |    \ISTANZE[2].ff_dn        |ff_d_31     |     3|
+|118   |    \ISTANZE[3].ff_dn        |ff_d_32     |     3|
+|119   |    \ISTANZE[4].ff_dn        |ff_d_33     |     3|
+|120   |    \ISTANZE[5].ff_dn        |ff_d_34     |     3|
+|121   |    \ISTANZE[6].ff_dn        |ff_d_35     |     3|
+|122   |  \Righe[3].Colonne[3].regx  |PIPO_reg_14 |    21|
+|123   |    \ISTANZE[0].ff_dn        |ff_d_22     |     3|
+|124   |    \ISTANZE[1].ff_dn        |ff_d_23     |     3|
+|125   |    \ISTANZE[2].ff_dn        |ff_d_24     |     3|
+|126   |    \ISTANZE[3].ff_dn        |ff_d_25     |     3|
+|127   |    \ISTANZE[4].ff_dn        |ff_d_26     |     3|
+|128   |    \ISTANZE[5].ff_dn        |ff_d_27     |     3|
+|129   |    \ISTANZE[6].ff_dn        |ff_d_28     |     3|
+|130   |  grigio_out                 |PIPO_reg_15 |     7|
+|131   |    \ISTANZE[0].ff_dn        |ff_d        |     1|
+|132   |    \ISTANZE[1].ff_dn        |ff_d_16     |     1|
+|133   |    \ISTANZE[2].ff_dn        |ff_d_17     |     1|
+|134   |    \ISTANZE[3].ff_dn        |ff_d_18     |     1|
+|135   |    \ISTANZE[4].ff_dn        |ff_d_19     |     1|
+|136   |    \ISTANZE[5].ff_dn        |ff_d_20     |     1|
+|137   |    \ISTANZE[6].ff_dn        |ff_d_21     |     1|
++------+-----------------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+Synthesis Optimization Complete : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 555.957 ; gain = 300.141
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 615.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 615.559 ; gain = 359.742
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 615.559 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/ImgMatrix.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ImgMatrix_utilization_synth.rpt -pb ImgMatrix_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 19:04:39 2023...

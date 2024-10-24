@@ -1,0 +1,895 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 26 17:09:18 2023
+# Process ID: 18356
+# Current directory: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11132 C:\Users\marco\Desktop\Progetti_Vivado\ImgMatrix\ImgMatrix.xpr
+# Log file: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/vivado.log
+# Journal file: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/Mean.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/Mean.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Adder.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Adder.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Full_Adder.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Full_Adder.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Half_Adder.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Half_Adder.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/04_-_ImgMatrix/top_sim.vhd
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 17:53:17 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PIPO_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ff_d'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sim_1/imports/04_-_ImgMatrix/top_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_sim'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim/xsim.dir/top_sim_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Dec 26 17:53:40 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 800.480 ; gain = 42.812
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a12ticsg325-1L
+Top: ImgMatrix
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 854.113 ; gain = 45.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ImgMatrix' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:26]
+	Parameter IMG_DIM_POW2 bound to: 2 - type: integer 
+	Parameter word_lenght bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:18]
+	Parameter word_lenght bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ff_d' (1#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:14]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'PIPO_reg' (2#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:18]
+	Parameter word_lenght bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:61]
+	Parameter word_lenght bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:61]
+	Parameter word_lenght bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:61]
+WARNING: [Synth 8-3848] Net uscita in module/entity ImgMatrix does not have driver. [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'ImgMatrix' (3#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:26]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[7]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[6]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[5]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[4]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[3]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[2]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[1]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[0]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_x_addr[1]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_x_addr[0]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_y_addr[1]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_y_addr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 897.105 ; gain = 88.633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 897.105 ; gain = 88.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 897.105 ; gain = 88.633
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1185.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1231.031 ; gain = 422.559
+22 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1231.031 ; gain = 422.559
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:01:54 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:10:03 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:18:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PIPO_reg'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3146] binding entity 'pipo_reg' does not have generic 'word_lenght' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:30]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit top_sim in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:20:10 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1489.254 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ImgMatrix' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:26]
+	Parameter IMG_DIM_POW2 bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:15]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ff_d' (1#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:14]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-3491] module 'ff_d' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/04_-_ImgMatrix/ff_d.vhd:4' bound to instance 'ff_dn' of component 'ff_d' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'PIPO_reg' (2#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:15]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+INFO: [Synth 8-3491] module 'PIPO_reg' declared at 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/PIPO_reg.vhd:5' bound to instance 'regx' of component 'PIPO_reg' [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:58]
+WARNING: [Synth 8-3848] Net uscita in module/entity ImgMatrix does not have driver. [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'ImgMatrix' (3#1) [C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd:26]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[7]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[6]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[5]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[4]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[3]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[2]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[1]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_gray[0]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_x_addr[1]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_x_addr[0]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_y_addr[1]
+WARNING: [Synth 8-3331] design ImgMatrix has unconnected port out_y_addr[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1489.254 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1489.254 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1489.254 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1489.254 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:24:33 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:30:03 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:32:14 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_bp {C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd} 54
+remove_bps -file {C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd} -line 54
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:43:22 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 18:47:55 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue Dec 26 19:04:22 2023] Launched synth_1...
+Run output will be captured here: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'top_sim' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj top_sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ImgMatrix'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 10aba5bc5d964b51ba6d07cf7151d807 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_sim_behav xil_defaultlib.top_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.ff_d [ff_d_default]
+Compiling architecture behavioral of entity xil_defaultlib.PIPO_reg [pipo_reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.ImgMatrix [imgmatrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.top_sim
+Built simulation snapshot top_sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "top_sim_behav -key {Behavioral:sim_1:Functional:top_sim} -tclbatch {top_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source top_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'top_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 19:05:22 2023...

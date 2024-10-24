@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marco/Desktop/Progetti_Vivado/SIPO_Register/SIPO_Register.sim/sim_1/synth/timing/xsim/SIPO_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIPO
+INFO: [VRFC 10-311] analyzing module ff_d
+INFO: [VRFC 10-311] analyzing module glbl

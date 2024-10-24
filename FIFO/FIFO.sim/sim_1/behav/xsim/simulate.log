@@ -1,0 +1,7 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+ERROR: Index -1 out of bound 3 downto 0
+Time: 210 ns  Iteration: 0  Process: /FIFO_sim/FIFO_inst/line__37
+  File: C:/Users/marco/Desktop/Progetti_Vivado/FIFO/FIFO.srcs/sources_1/new/FIFO.vhd
+
+HDL Line: C:/Users/marco/Desktop/Progetti_Vivado/FIFO/FIFO.srcs/sources_1/new/FIFO.vhd:55

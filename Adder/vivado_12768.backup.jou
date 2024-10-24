@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Oct 18 09:46:11 2023
+# Process ID: 12768
+# Current directory: C:/Users/marco/Desktop/Progetti_Vivado/Adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17336 C:\Users\marco\Desktop\Progetti_Vivado\Adder\Adder.xpr
+# Log file: C:/Users/marco/Desktop/Progetti_Vivado/Adder/vivado.log
+# Journal file: C:/Users/marco/Desktop/Progetti_Vivado/Adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marco/Desktop/Progetti_Vivado/Adder/Adder.xpr
+update_compile_order -fileset sources_1

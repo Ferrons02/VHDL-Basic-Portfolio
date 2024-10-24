@@ -1,0 +1,98 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 26 17:09:18 2023
+# Process ID: 18356
+# Current directory: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11132 C:\Users\marco\Desktop\Progetti_Vivado\ImgMatrix\ImgMatrix.xpr
+# Log file: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/vivado.log
+# Journal file: C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/Mean.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/Mean.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Adder.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Adder.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Full_Adder.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Full_Adder.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Half_Adder.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/imports/new/Half_Adder.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/04_-_ImgMatrix/top_sim.vhd
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+update_compile_order -fileset sim_1
+launch_simulation
+source top_sim.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+refresh_design
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+add_bp {C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd} 54
+remove_bps -file {C:/Users/marco/Desktop/Progetti_Vivado/ImgMatrix/ImgMatrix.srcs/sources_1/new/ImgMatrix.vhd} -line 54
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+close_sim

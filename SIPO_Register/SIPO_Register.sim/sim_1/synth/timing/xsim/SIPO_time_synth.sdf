@@ -1,0 +1,170 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "SIPO")
+(DATE "Tue Oct 17 11:09:55 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2018.3")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE ck_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (91.0:96.0:96.0) (91.0:96.0:96.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE ck_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (791.5:924.7:924.7) (791.5:924.7:924.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDCE")
+  (INSTANCE ff_d_I/q_int_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH (posedge CLR) Q (689.0:855.0:855.0))
+      (IOPATH C Q (292.0:362.0:362.0) (292.0:362.0:362.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (SETUPHOLD (negedge CE) (posedge C) (88.0:109.0:109.0) (-5.0:-5.0:-5.0))
+      (RECREM (negedge CLR) (posedge C) (279.0:347.0:347.0) (-232.0:-232.0:-232.0))
+      (SETUPHOLD (posedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+      (SETUPHOLD (negedge D) (posedge C) (-74.0:-60.0:-60.0) (262.0:262.0:262.0))
+    )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[0\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[1\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[2\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[3\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[4\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[5\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[6\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[7\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE output\[8\]_INST_0)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2430.6:2586.4:2586.4) (2430.6:2586.4:2586.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE q_int_reg_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (791.5:924.7:924.7) (791.5:924.7:924.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE rst_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (791.5:924.7:924.7) (791.5:924.7:924.7))
+    )
+  )
+)
+(CELL 
+    (CELLTYPE "SIPO")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT ck_IBUF_BUFG_inst/O ff_d_I/q_int_reg/C (439.0:584.0:584.0) (439.0:584.0:584.0))
+      (INTERCONNECT ck_IBUF_inst/O ck_IBUF_BUFG_inst/I (759.7:799.7:799.7) (759.7:799.7:799.7))
+      (INTERCONNECT ff_d_I/q_int_reg/Q output\[8\]_INST_0/I (901.7:975.7:975.7) (901.7:975.7:975.7))
+      (INTERCONNECT q_int_reg_i_1/O ff_d_I/q_int_reg/D (909.7:985.7:985.7) (909.7:985.7:985.7))
+      (INTERCONNECT rst_IBUF_inst/O ff_d_I/q_int_reg/CLR (835.7:893.7:893.7) (835.7:893.7:893.7))
+      )
+    )
+)
+)

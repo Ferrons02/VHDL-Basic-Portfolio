@@ -1,0 +1,1 @@
+-wto "dc272046caab4676a33ca9fb1bf7ffb1" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "top_sim_behav" "xil_defaultlib.top_sim" -log "elaborate.log" 

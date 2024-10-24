@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec 28 15:10:17 2023
+# Process ID: 10104
+# Current directory: C:/Users/marco/Desktop/Progetti_Vivado/Pipeline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19976 C:\Users\marco\Desktop\Progetti_Vivado\Pipeline\Pipeline.xpr
+# Log file: C:/Users/marco/Desktop/Progetti_Vivado/Pipeline/vivado.log
+# Journal file: C:/Users/marco/Desktop/Progetti_Vivado/Pipeline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marco/Desktop/Progetti_Vivado/Pipeline/Pipeline.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source top_sim.tcl
+restart
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+restart
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+restart
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim
+launch_simulation
+source top_sim.tcl
+close_sim

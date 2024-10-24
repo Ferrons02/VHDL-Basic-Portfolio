@@ -1,0 +1,1 @@
+-wto "f4edc7b5b1264412b32cca84142398af" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "MegaOperation_behav" "xil_defaultlib.MegaOperation" -log "elaborate.log" 
